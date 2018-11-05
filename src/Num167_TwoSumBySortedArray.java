@@ -1,9 +1,8 @@
-import java.util.Arrays;
 
 public class Num167_TwoSumBySortedArray {
-	
+
 	public static int[] twoSum(int[] numbers, int target) {
-		if(numbers == null || numbers.length < 2) {
+		if (numbers == null || numbers.length < 2) {
 			return null;
 		}
 		int length = numbers.length;
@@ -17,14 +16,14 @@ public class Num167_TwoSumBySortedArray {
 				j++;
 			}
 		}
-		return j == k ? null : new int[] {j+1, k+1};      
+		return j == k ? null : new int[] { j + 1, k + 1 };
 	}
-	   
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] input = new int[] {2, 7, 11, 15};
+		int[] input = new int[] { 2, 7, 11, 15 };
 		int[] result = twoSum(input, 9);
-		if(result != null) {
+		if (result != null) {
 			for (int i : result) {
 				System.out.println(i);
 			}
